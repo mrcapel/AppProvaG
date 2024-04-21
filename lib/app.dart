@@ -1,6 +1,6 @@
 import 'package:app_financy/features/onboarding/onboarding_page.dart';
 import 'package:flutter/material.dart';
-import 'features/register/register.dart';
+import 'features/home/home.dart';
 
 class App extends StatelessWidget {
   const App({Key? key});
@@ -10,7 +10,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       home: OnboardingPage(),
       routes: {
-        '/register': (context) => RegisterPage(),
+        '/home': (context) => HomePage(),
         
       },
     );

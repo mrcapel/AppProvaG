@@ -16,16 +16,16 @@ class OnboardingPage extends StatelessWidget {
           children: [
             Expanded(
               flex: 2,
-              child: Image.asset('assets/images/gatoInicio.png'),
+              child: Image.asset('assets/images/Agenda-PNG.png'),
             ),
             Text(
-              'Quer ter ganhos Incriveis?',
+              'O Melhor Bloco De Notas!',
               style: AppTextStyles.mediumText.copyWith(
                 color: const Color.fromARGB(255, 0, 0, 0),
               ),
             ),
             Text(
-              '!!!LUCRO SEM FIM!!!',
+              'Anotações de Qualidade',
               style: AppTextStyles.mediumText.copyWith(
                 color: const Color.fromARGB(255, 0, 0, 0),
               ),
@@ -33,11 +33,9 @@ class OnboardingPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: PrimaryButton(
-                text: 'Começar de GRAÇA',
+                text: 'Começar',
                 onPressed: () {
-                  // Adicione aqui a ação que deseja realizar ao clicar no botão
-                  // Por exemplo, navegar para outra página
-                  Navigator.pushNamed(context, '/register');
+                  Navigator.pushNamed(context, '/home');
                 },
                 backgroundColor: Colors.amber,
               ),
@@ -69,20 +67,6 @@ class CustomTextButton extends StatelessWidget {
       onTap: () => log('message'),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            'Já é um investidor? ',
-            style: AppTextStyles.smallText.copyWith(
-              color: AppColors.grey,
-            ),
-          ),
-          Text(
-            'Logar',
-            style: AppTextStyles.smallText.copyWith(
-              color: AppColors.purple,
-            ),
-          ),
-        ],
       ),
     );
   }
