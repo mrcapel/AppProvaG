@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:app_financy/common/constants/app_colors.dart';
 import 'package:app_financy/common/constants/app_text_styles.dart';
 import 'package:app_financy/common/widgets/primary_button.dart';
+import 'package:app_financy/features/usuario/usuario.dart';
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({Key? key}) : super(key: key);
@@ -48,6 +49,15 @@ class OnboardingPage extends StatelessWidget {
                 bottom: 16.0,
               ),
               child: CustomTextButton(),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ProfileScreen()),
+                );
+              },
+              child: Text('Perfil'),
             ),
           ],
         ),
